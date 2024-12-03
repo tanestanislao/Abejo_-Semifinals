@@ -7,7 +7,7 @@ const {
   addItem,
   updateItem,
   deleteItem,
-} = require("../controllers/itemController");
+} = require("../controllers/taskController");
 
 // Route definitions
 router.get("/", getAllItems);
