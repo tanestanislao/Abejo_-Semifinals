@@ -1,4 +1,4 @@
-// server.js
+// index.js
 require("dotenv").config();
 const express = require("express");
 const app = express();
@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Routes
 const taskRoutes = require("./routes/taskRoutes");
-app.use("/items", taskRoutes);
+app.use("/task", taskRoutes);
 
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
